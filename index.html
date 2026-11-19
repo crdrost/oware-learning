@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="./main.css">
+  <title>Oware, World!</title>
+</head>
+<body>
+<div class="game">
+  <h1>Oware</h1>
+  
+  <p>This is a scaffold to teach people how to code via a mancala game. Look at <a href="./README.md">the readme</a> for instructions.</p>
+
+  <div class="board">
+
+    <!-- Player 2 score -->
+    <div class="score-pile">
+      <h3>Player 2</h3>
+      <div id="score2" class="score">0</div>
+      <small>Score</small>
+    </div>
+
+    <!-- Playing board -->
+    <div class="pits">
+
+      <!-- Top row: Player 2 -->
+      <div class="pit-row" id="topRow">
+        <button class="house" data-index="11">4</button>
+        <button class="house" data-index="10">4</button>
+        <button class="house" data-index="9">4</button>
+        <button class="house" data-index="8">4</button>
+        <button class="house" data-index="7">4</button>
+        <button class="house" data-index="6">4</button>
+      </div>
+
+      <!-- Bottom row: Player 1 -->
+      <div class="pit-row" id="bottomRow">
+        <button class="house" data-index="0">4</button>
+        <button class="house" data-index="1">4</button>
+        <button class="house" data-index="2">4</button>
+        <button class="house" data-index="3">4</button>
+        <button class="house" data-index="4">4</button>
+        <button class="house" data-index="5">4</button>
+      </div>
+
+    </div>
+
+    <!-- Player 1 score -->
+    <div class="score-pile">
+      <h3>Player 1</h3>
+      <div id="score1" class="score">0</div>
+      <small>Score</small>
+    </div>
+
+  </div>
+
+  <div class="controls">
+    <button id="resetButton">Reset Game</button>
+    <button id="pauseButton">Pause Everything</button>
+  </div>
+
+  <h3>Status</h3>
+  <div id="status"></div>
+</div>
+  <script type="text/javascript" src="./main.js"></script>
+</body>
+</html>
+

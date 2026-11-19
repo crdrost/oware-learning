@@ -1,0 +1,117 @@
+
+body {
+  font-family: sans-serif;
+  background: #f3f0e9;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.game {
+  width: 750px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.board {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background: #9b6238;
+  border: 8px solid #633c24;
+  border-radius: 25px;
+  padding: 25px 15px;
+}
+
+.pits {
+  flex: 1;
+  min-width: 0;
+}
+
+.pit-row {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.house {
+  flex: 1;
+  min-width: 0;
+  aspect-ratio: 1;
+  max-width: 75px;
+  border-radius: 50%;
+  border: 4px solid #633c24;
+  background: #e6c99c;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #382315;
+}
+
+.house:hover {
+  background: #fff0ce;
+}
+
+.house:active {
+  transform: scale(0.95);
+}
+
+.score-pile {
+  color: white;
+  min-width: 65px;
+}
+
+.score {
+  background: #e6c99c;
+  color: #382315;
+  border: 4px solid #633c24;
+  border-radius: 15px;
+  padding: 20px 10px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.controls, .messaging {
+  margin: 25px;
+}
+
+button {
+  cursor: pointer;
+}
+
+#resetButton {
+  padding: 12px 25px;
+  background: #a34432;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+#pauseButton {
+  padding: 12px 25px;
+  background: #3244a3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+input {
+  padding: 12px;
+  width: 65%;
+  max-width: 350px;
+}
+
+#status {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px;
+  height: 120px;
+  overflow-y: auto;
+  text-align: left;
+  font-family: monospace;
+}
